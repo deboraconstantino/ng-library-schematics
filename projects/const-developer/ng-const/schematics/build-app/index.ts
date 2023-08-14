@@ -29,13 +29,13 @@ export function buildApp(): Rule {
             fs.readdir(folderToZip, {withFileTypes: true}, (err: any) => {
                 if (err) {
                     console.error('Não foi possível encontrar a pasta ' + folderToZip + '. Certifique-se de que o nome da pasta de build (dist) é igual ao nome do projeto: ' + appName + '.');
-                } else {
-                    archive.pipe(output);
-
-                    // Recursivamente adiciona todos os arquivos e pastas dentro da pasta sourceFolder
-                    archive.directory(sourceFolder, path.basename(sourceFolder));
                 };
             });
+
+            archive.pipe(output);
+
+            // Recursivamente adiciona todos os arquivos e pastas dentro da pasta sourceFolder
+            archive.directory(sourceFolder, path.basename(sourceFolder));
 
             archive.finalize();
         };

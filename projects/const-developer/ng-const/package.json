@@ -1,6 +1,6 @@
 {
   "name": "@const-developer/ng-const",
-  "version": "0.0.26",
+  "version": "0.0.28",
   "schematics": "./schematics/collection.json",
   "scripts": {
     "build": "tsc -p tsconfig.schematics.json",
