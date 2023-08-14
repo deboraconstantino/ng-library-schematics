@@ -11,7 +11,7 @@ Pacote desenvolvido: https://www.npmjs.com/package/@const-developer/ng-const
 **Observação:** o pacote foi desenvolvido exclusivamente para estudos.
 
 ## Testando os schematics criados
-1. Executar o comando `ng-add @const-developer/ng-cost`;
+1. Executar o comando `ng-add @const-developer/ng-const`;
 2. Responder a pergunta com Y, para que os comandos de build e o pacote archiver seja instalado **(esse testa o ng-add)**;
 3. Executar o comando `npm run build:libcore`. Esse comando irá executar o build da aplicação e em seguida, zipar a pasta gerada em dist e renomear sua extensão para .app **(esse testa o build-app)**.
 
