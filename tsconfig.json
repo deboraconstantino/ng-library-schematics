@@ -2,6 +2,20 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "paths": {
+      "@const-developer/ng-const": [
+        "dist/const-developer/ng-const"
+      ],
+      "@const-developer/ng-lib": [
+        "dist/const-developer/ng-lib"
+      ],
+      "const-lib": [
+        "dist/const-lib"
+      ],
+      "const-lib2": [
+        "dist/const-lib2"
+      ]
+    },
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,

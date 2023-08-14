@@ -1,0 +1,16 @@
+{
+    "$schema": "http://json-schema.org/schema",
+    "$id": "Ng add for ProtheusLibCore",
+    "title": "Ng add customizado para adicionar ou não o script de build do ProtheusLibCore",
+    "type": "object",
+    "description": "Adiciona a dependência do ProtheusLibCore no projeto",
+    "required": ["buildApp"],
+    "properties": {
+      "buildApp": {
+        "type": "boolean",
+        "description": "Geração automática do .app",
+        "x-prompt": "Deseja adicionar a geração automática do .app? Ao confirmar, será instalado o pacote 'archiver' em seu projeto.",
+        "default": false
+      }
+    }
+}

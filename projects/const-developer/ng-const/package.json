@@ -1,0 +1,21 @@
+{
+  "name": "@const-developer/ng-const",
+  "version": "0.0.26",
+  "schematics": "./schematics/collection.json",
+  "scripts": {
+    "build": "tsc -p tsconfig.schematics.json",
+    "postbuild": "copyfiles schematics/collection.json ../../../dist/const-developer/ng-const/ && copyfiles schematics/ng-add/schema.json ../../../dist/const-developer/ng-const/"
+  },
+  "peerDependencies": {
+    "@angular/common": "^15.2.0",
+    "@angular/core": "^15.2.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false,
+  "devDependencies": {
+    "copyfiles": "file:../../node_modules/copyfiles",
+    "typescript":"file:../../node_modules/typescript"
+  }
+}
